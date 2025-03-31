@@ -19,12 +19,13 @@ soup = BeautifulSoup(response.text, 'html.parser')
 songs = []
 
 # 멜론 차트의 노래 제목과 아티스트를 찾습니다.
-for entry in soup.select('tr.lst50, tr.lst100'):  # 상위 50위 및 100위 목록
-    rank = entry.select_one('span.rank').get_text()
-    title = entry.select_one('div.ellipsis.rank01 a').get_text()
-    artist = entry.select_one('div.ellipsis.rank02 a').get_text()
-    songs.append((rank, title, artist))
+#lst50 #frm > div > table > tbody #lst50
+# for entry in soup.select('tr.lst50, tr.lst100'):  # 상위 50위 및 100위 목록
+#     rank = entry.select_one('span.rank').get_text()
+#     title = entry.select_one('div.ellipsis.rank01 a').get_text()
+#     artist = entry.select_one('div.ellipsis.rank02 a').get_text()
+#     songs.append((rank, title, artist))
 
 # 수집한 데이터를 출력합니다.
-for song in songs:
-    print(f"{song[0]}. {song[1]} - {song[2]}")
+# for song in songs:
+#     print(f"{song[0]}. {song[1]} - {song[2]}")
