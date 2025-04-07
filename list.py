@@ -24,7 +24,7 @@ dd = ["두", "두", "두", "두둥"]
 for d in dd:
     print(d)
     time.sleep(1)
-    
+
 print(f"제가 추천한곡은 {ai_song}입니다.") 
 
 # 리스트를 쓰는 이유
