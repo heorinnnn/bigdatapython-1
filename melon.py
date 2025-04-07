@@ -28,9 +28,9 @@ for entry in soup.select('tr.lst50, tr.lst100'):  # 상위 50위 및 100위 목�
     songs.append((rank, title, artist))
 
 # 수집한 데이터를 출력합니다.
-for song in songs:
-    print(f"{song[0]}. {song[1]} - {song[2]}")
-
+# for song in songs:
+#     print(f"{song[0]}. {song[1]} - {song[2]}")
+print(f"{songs[1][0]}. {songs[1][1]} - {songs[1][2]}")
 
 # 멜론 차트 100 중에서 노래 한곡 추천 해주는 서비스 만들기
 ai_song = random.choice(songs)
